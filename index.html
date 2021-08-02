@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO list</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Todo list</h1>
+    </header>
+    <main>
+      <section class="input-area">
+        <button class="button" id="check-btn">&#10003;</button>
+        <input class="text-input" placeholder="What needs to be done?" />
+        <button class="button" id="add-btn">Add</button>
+      </section>
+
+      <section>
+        <ul class="list-container">
+          <li>
+            <input type="checkbox" />
+            <span class="checked">asd</span>
+            <div class="edit-icon">&#9998;</div>
+            <div class="delete-icon">&#10005;</div>
+          </li>
+
+          <!-- <li>
+            <input type="checkbox" />
+            <span>123</span>
+            <div class="delete-icon">&#10005;</div>
+          </li> -->
+          <!-- <li>
+            <input type="checkbox" />
+            <span class="checked">456</span>
+            <div class="delete-icon">&#10005;</div>
+          </li> -->
+        </ul>
+      </section>
+      <footer>
+        <label id="todo-count"> 5 elements left</label>
+        <div class="type-btn-area">
+          <button class="button type-button" id="select-all-btn">All</button>
+          <button class="button type-button" id="select-active-btn">
+            Active
+          </button>
+          <button class="button type-button" id="select-completed-btn">
+            Completed
+          </button>
+        </div>
+        <button class="button" id="clear-btn">Clear all</button>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
